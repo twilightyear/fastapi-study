@@ -1,0 +1,19 @@
+# PyCharm project settings
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Python compiled files & Virtual Environment
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# Sensitive environment variables
+.env
+
+# Logs and checkpoints
+*.log
+.ipynb_checkpoints/
