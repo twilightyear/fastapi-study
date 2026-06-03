@@ -28,3 +28,7 @@ class UserSignUpRequest(BaseModel): #Sign up rule
         if not re.search(r"[!@#$%^&*(),.?\":{}|<>_]",value):
             raise ValueError("Password must contain least one special character")
         return value
+        
+class UserLoginRequest(BaseModel): #Login Request rule
+    email: EmailStr = Field(..., description="Email address")
+    password: str = Field(..., min_length=8, description="Password")
